@@ -1,0 +1,184 @@
+body {
+  font-family: "Arial";
+  font-size: 25px;
+  line-height: 29px;
+  margin: 0;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+}
+.header__row {
+  display: flex;
+  align-items: space-between;
+  align-items: center;
+  font-size: 50px;
+  line-height: 57px;
+}
+/* .header__menu { 
+
+}
+.menu {
+
+}
+.menu__icon {
+
+}
+.icon-menu {
+  
+}
+*/
+.menu__body {
+  margin-right: 50px;
+}
+
+.menu__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.menu__list li {
+  padding-right: 25px;
+}
+
+.menu__list li:last-child {
+  padding-right: 0;
+}
+
+.menu__link {
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  text-decoration: none;
+  color: rgba(248, 191, 199, 1);
+}
+
+.effect-3 a::before {
+  content: attr(data-hover);
+  position: absolute;
+  color: #e50043;
+  transition: transform 0.3s, opacity 0.5s;
+}
+
+.effect-3 a:hover::before {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.header__logo {
+  color: #e50043;
+  margin: 50px auto 50px 50px;
+}
+
+.main-screen {
+  flex: 1 0 100%;
+  position: relative;
+}
+
+.main-screen__title {
+  position: absolute;
+  font-size: 100px;
+  line-height: 115px;
+  color: #e50043;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+  /* transform: (50%, 0px, 0px); Спросить, как передвинуть наполовину влево*/
+}
+
+.main-screen__bg {
+  background-image: url("../img/evian_origins_logo.svg");
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: 1040px;
+  margin: 150px auto;
+}
+
+.water__block {
+  padding: 24px;
+}
+
+.block {
+  border: 3px solid #f8bfc7;
+  border-radius: 20px;
+}
+
+.block__text {
+  letter-spacing: 0.05em;
+  margin: 0 0 25px 0;
+  list-style: none;
+  padding: 0;
+}
+
+.block__text:last-child {
+  margin: 0;
+}
+
+.water__cards {
+  display: flex;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.water__item {
+  margin: 150px 0;
+  width: 280px;
+}
+
+.item-caption {
+  text-align: center;
+  margin: 48px 0 0 0;
+}
+
+.compositin__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.block-pic {
+  margin: 30px 80px;
+}
+
+.footer {
+  background-color: #f8bfc7;
+}
+
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+}
+
+.footer__copyright {
+  font-size: 50px;
+  line-height: 57px;
+  color: #ffffff;
+}
