@@ -95,8 +95,8 @@ body {
 .main .main__title {
   position: absolute;
   left: 50%;
-  top: 62%;
-  transform: translateX(-50%);
+  top: 50%;
+  transform: translate(-50%, 180px);
   font-size: 100px;
   line-height: 115px;
   color: #e50043;
