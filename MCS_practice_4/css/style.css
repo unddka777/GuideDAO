@@ -21,7 +21,6 @@ body {
   font-weight: 700;
   font-size: 50px;
   line-height: 57px;
-  min-width: 1440px;
   height: 100%;
 }
 
@@ -59,7 +58,7 @@ body {
   margin: 0 auto;
   padding: 200px 100px;
   display: grid;
-  grid-template-columns: 600px 600px;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 300px 300px;
   justify-content: center;
   gap: 20px;
@@ -67,20 +66,25 @@ body {
 
 .block_item {
   border: 5px solid #000000;
-  width: 600px;
-  height: 300px;
   text-align: center;
   display: flex;
   align-items: center;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 860px) {
   body {
     font-size: 25px;
     line-height: 29px;
     min-width: 390px;
   }
 
+  .block {
+    margin: 0 auto;
+    padding: 50px 30px;
+  }
+}
+
+@media (max-width: 500px) {
   .container {
     max-width: 400px;
     padding: 0 5px;
