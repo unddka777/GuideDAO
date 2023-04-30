@@ -68,17 +68,22 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 390px) {
+  body {
+    font-size: 25px;
+    line-height: 29px;
+  }
+
   .block {
     display: flex;
     flex-wrap: wrap;
     margin: 20px auto;
+    font-size: 25px;
+    line-height: 29px;
   }
 
   .block_item {
     width: 330px;
     height: 165px;
-    font-size: 25px;
-    line-height: 29px;
   }
 }
